@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Data Form</title>
+</head>
+
+<body>
+    
+        <div class="form-group">
+
+                 <strong>Name: </strong>
+            <input type="text"  placeholder="Enter your name"  id="name" required><br><br>
+            <strong>Roll No:</strong>
+            <input type="number " placeholder="eg@20CS0YY" id="rollno" required ><br><br>
+            <strong>Suggestion for restaurant:</strong>
+            <input type="text" placeholder="Royal Taj/Desi Hut" id="Suggestion"><br><br>
+            <strong id="msg"> You are responsible for everything:</strong>
+            <!-- <div class="form-check"> -->
+                
+                <input class="form-check-input" type="checkbox"  value="" id="flexCheckIndeterminate">
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                        YES I'm.
+                </label><br><br>
+                      
+                <button type="button" onclick="start()" class="btn btn-primary">Submit</button>
+        </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+   
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-database-compat.js"></script>
+
+    <script>
+        const firebaseConfig = {
+    apiKey: "AIzaSyDsQe2MIkCmQe7gs3Sd_ZYW23oB073tv1I",
+    authDomain: "class-data-dedc6.firebaseapp.com",
+    projectId: "class-data-dedc6",
+    storageBucket: "class-data-dedc6.appspot.com",
+    messagingSenderId: "499228520484",
+    appId: "1:499228520484:web:98bddbd549dad1ac9f68b1"
+  };
+
+  // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+
+    </script>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
